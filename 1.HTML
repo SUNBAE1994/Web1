@@ -7,34 +7,90 @@
   <head>
     <meta charset="utf-8">
     <title>Who are you? Sun bae!</title>
+    <style>
+    h1{
+      font-style: italic;
+      color: inherit;
+      font-size: 35px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .jobname{
+      font-size: 16.5px;
+      color : #000085;
+    }
+    img{
+      border-radius: 9px;
+      width: auto;
+      height: 215px;
+    }
+    .sub_name{
+      border-bottom: 1px solid gray;
+      width : 600px;
+    }
+    #upside{
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      border: 15px solid white;
+      grid-auto-rows: 200px;
+    }
+    #Grid1,#Grid2{
+      display : grid;
+      grid-template-columns: 140px 1fr;
+      grid-auto-rows: 35px;
+    }
+    @media(max-width:600px){
+      #upside{
+        grid-auto-rows: 250px;
+      }
+      #Grid1,#Grid2{
+        grid-auto-rows: 40px;
+      }
+      #img_loc{
+        display: flex;
+        align-items: center
+      }
+    }
+    </style>
   </head>
 
-  <body id="page-top">
+  <body>
 
+    <div id = "upside"><!--if you change picture size, you considerate #upside size too.-->
+      <div id = "img_loc"><img src="img2.jpg" align = "left" hspace ="10" vspave = "10"></div>
+      <div>
+        <h1>&nbsp;SungGeun Andrew Bae</h1>
+        I'm DesiEngineer who want to make product for people with people<br>
 
-    <h1>&nbsp;SungGeun Andrew Bae<img src="img2.jpg" style="width: auto; height: 200px" align = "left" hspace ="10" vspave = "10"></h1>
-    I'm DesiEngineer who want to make product for people with people<br>
-
-    <p><strong>Facebook</strong> https://www.facebook.com/Bae1994</p>
-    <p><strong>E-mail</strong> v7pigv@gmail.com</p>
-    <p><strong>Address</strong> Korea</p>
-
-    <pre>
-    </pre>
+        <p><strong>Facebook</strong> <a href ="https://www.facebook.com/Bae1994">&nbsp;www.fb.com/Bae1994</a></p>
+        <p><strong>E-mail</strong> v7pigv@gmail.com</p>
+        <p><strong>Address</strong> Korea</p>
+      </div>
+    </div>
 
     <ul>
-    <p style="font-size : 1.5em;color : #0000AF;"><strong>Experience</strong></p>
-    <p>2018.07 ~ Present &nbsp;<strong>UX Design intern</strong> in SAP Apphaus</p>
-    <p>2017.07 ~ 2018.04 &nbsp;<strong>D-school in ajou</strong> Planning and Operation</p>
-    <p>2017.01 ~ 2017.16 &nbsp;<strong>UX engineer intern</strong> in Alternative Lighting Technology</p>
-    <p>2016.07 ~ 2016.11 &nbsp;<strong>SmartHome Living Desing Thinking Project</strong> with SAP Apphaus</p>
-    <p>2013.03 ~ 2018.07 &nbsp;<strong>President of Invention Club Eureka</strong> in Ajou university</p>
-
-    <p style="font-size : 1.5em;color : #0000AF;"><strong>Education</strong></p>
-    <p>2013.03 ~ Present &nbsp;<strong>Ajou university</strong> - Electrical and Computer Engineering</p>
-    <p>2017.12 ~ 2018.02 &nbsp;<strong>Shanghai Jiao Tong University</strong> - Exchange Student</p>
-
-
+      <p style="font-size : 1.5em;color : #0000AF" class = "sub_name"><strong>Experience</strong></p>
+      <div id = "Grid1">
+        <div>2018.07 ~ Present</div>
+        <div><strong>UX Design intern</strong> <a href = "https://experience.sap.com/designservices/apphaus/korea">in SAP Apphaus</a></div>
+        <div>2017.07 ~ 2018.04</div>
+        <div><strong >D-school in ajou</strong> Planning and Operation</div>
+        <div>2017.01 ~ 2017.16</div>
+        <div><strong>UX Engineer intern</strong> in Alternative Lighting Technology</div>
+        <div>2016.07 ~ 2016.11</div>
+        <div><a href="https://www.youtube.com/watch?v=0SSp9Wc1uek"><strong>Smart Home Living Design Thinking Project</strong></a> with SAP Apphaus</div>
+        <div>2013.03 ~ 2018.07</div>
+        <div><strong>President of Invention Club Eureka</strong> in Ajou university</div>
+      </div>
+      <p style="font-size : 1.5em;color : #0000AF" class ="sub_name"><strong>Education</strong></div>
+      <div id = "Grid2">
+        <div>2013.03 ~ Present</div>
+        <div><strong>Ajou university</strong> - Electrical and Computer Engineering</div>
+        <div>2017.12 ~ 2018.02</div>
+        <div><strong>Shanghai Jiao Tong University</strong> - Exchange Student</div>
+      </div>
     </ul>
   </body>
-  </html>
+</html>
