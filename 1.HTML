@@ -30,36 +30,38 @@
       border-bottom: 1px solid gray;
       width : 600px;
     }
-    #upside{
+    .upside{
       display: grid;
       grid-template-columns: 190px 1fr;
-      border: 15px solid white;
+
       grid-auto-rows: 200px;
     }
-    #Grid1,#Grid2{
+    .Grid1,.Grid2{
       display : grid;
       grid-template-columns: 140px 1fr;
       grid-auto-rows: 35px;
     }
     @media(max-width:600px){
-      #upside{
+      .upside{
         grid-auto-rows: 250px;
       }
-      #Grid1,#Grid2{
+      .Grid1,.Grid2{
         grid-auto-rows: 40px;
       }
-      #img_loc{
+      .img_loc{
         display: flex;
         align-items: center
       }
     }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
-  <body>
+  <body id=boody>
 
-    <div id = "upside"><!--if you change picture size, you considerate #upside size too.-->
-      <div id = "img_loc"><img src="img2.jpg" align = "left" hspace ="10" vspave = "10"></div>
+    <div class = "upside"><!--if you change picture size, you considerate #upside size too.-->
+      <div class = "img_loc"><img src="img2.jpg" align = "left" hspace ="10" vspave = "10"></div>
       <div>
         <h1>&nbsp;SungGeun Andrew Bae</h1>
         I'm DesiEngineer who want to make product for people with people<br>
@@ -71,8 +73,8 @@
     </div>
 
     <ul>
-      <p style="font-size : 1.5em;color : #0000AF" class = "sub_name"><strong>Experience</strong></p>
-      <div id = "Grid1">
+      <p id="sub_title" style="font-size : 1.5em;color : #0000AF" class = "sub_name"><strong>Experience</strong></p>
+      <div class = "Grid1">
         <div>2018.07 ~ Present</div>
         <div><strong>UX Design intern</strong> <a href = "https://experience.sap.com/designservices/apphaus/korea">in SAP Apphaus</a></div>
         <div>2017.07 ~ 2018.04</div>
@@ -84,13 +86,17 @@
         <div>2013.03 ~ 2018.07</div>
         <div><strong>President of Invention Club Eureka</strong> in Ajou university</div>
       </div>
-      <p style="font-size : 1.5em;color : #0000AF" class ="sub_name"><strong>Education</strong></div>
-      <div id = "Grid2">
+      <p id="sub_title" style="font-size : 1.5em;color : #0000AF" class ="sub_name"><strong>Education</strong></div>
+      <div class = "Grid2">
         <div>2013.03 ~ Present</div>
         <div><strong>Ajou university</strong> - Electrical and Computer Engineering</div>
         <div>2017.12 ~ 2018.02</div>
         <div><strong>Shanghai Jiao Tong University</strong> - Exchange Student</div>
       </div>
     </ul>
+
+    <input id="Sky_mode" type="button" value="Sky_mode" onclick="
+      Color_UpDown(this);
+      ">
   </body>
 </html>
